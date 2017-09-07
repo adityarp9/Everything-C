@@ -1,0 +1,22 @@
+	Customer 1
+Name: Aditya
+Device name: Hp Probook 440 G2
+Processor: Intel i5
+Ram: 4GB
+Hard disk space: 500GB
+Graphics: Intel (Shared ram)
+Screen display technology: LCD
+Price in rupees: 40000.000
+
+
+	Customer 2
+Name: Rajesh
+Device name: Macbook Pro Retina
+Processor: Intel i5
+Ram: 8GB
+Hard disk space: 512GB
+Graphics: Intel Iris
+Screen display technology: Retina
+Price in rupees: 128900.000
+
+
