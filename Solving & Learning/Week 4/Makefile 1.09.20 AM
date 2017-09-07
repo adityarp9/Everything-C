@@ -1,0 +1,52 @@
+#
+# Week 4 it is.
+#
+
+sigma: sigma.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o sigma sigma.c -lcs50 -lm
+
+structs-0: structs-0.c struct.h
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o structs-0 structs-0.c -lcs50 -lm
+
+structs-1: structs-1.c struct.h
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o structs-1 structs-1.c -lcs50 -lm
+
+structs-2: structs-2.c structs-2.h
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o structs-2 structs-2.c -lcs50 -lm
+
+
+compare-0: compare-0.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o compare-0 compare-0.c -lcs50 -lm
+
+compare-1: compare-1.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o compare-1 compare-1.c -lcs50 -lm
+
+pointer-0: pointer-0.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o pointer-0 pointer-0.c -lcs50 -lm
+
+pointer-1: pointer-1.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o pointer-1 pointer-1.c -lcs50 -lm
+
+copy-0: copy-0.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o copy-0 copy-0.c -lcs50 -lm
+
+copy-1: copy-1.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o copy-1 copy-1.c -lcs50 -lm
+
+copy-2: copy-2.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o copy-2 copy-2.c -lcs50 -lm
+
+copy-3: copy-3.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o copy-3 copy-3.c -lcs50 -lm
+
+swap-0:
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o swap-0 swap-0.c -lcs50 -lm
+
+swap-1:
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o swap-1 swap-1.c -lcs50 -lm
+
+dynamic: dynamic.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o dynamic dynamic.c -lcs50 -lm
+
+clean:
+	rm -f *o a.out core sigma structs-0 structs-1 compare-0 compare-1 pointer-0 pointer-1 copy-0 copy-1 copy-2 copy-3 swap-0 swap-1 dynamic
