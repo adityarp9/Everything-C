@@ -1,0 +1,36 @@
+                                        REDIRECT AND PIPELINE (CS50 SHORT)
+
+
+
+./redirect > file.txt
+// Prompt for input.
+Aditya
+// file.txt gets modified accordingly.This is known as redirecting stdin. Output of redirect.c will be given TO the file.
+
+
+./redirect < file.txt
+// Here stdin has been redirected. That is, the content of the file has been AS the input to the program redirect.c
+
+
+./hello > input.txt
+./redirect < input.txt
+// Here output (stdout) of hello.c to input.txt has been used as an input (stdin) bt redirect.c
+
+// If we don't want to unnecessarily use input.txt as an intermediate then :-
+./hello | ./redirect
+
+
+                                    More Amazing commands commander!
+
+cat marvel.txt
+// Read in the contents of marvel.txt and write to stdout
+
+sort marvel.txt
+// sort will output the line supplied via stdin to stdout. Sort contents of marvel.txt alphabetically. Read man sort for more.
+
+uniq marvel.txt
+//When supplied a sorted sequence of lines via stdin, will output the unique lines. Read man uniq for more
+
+cat marvel.txt | sort | uniq > Avenger.txt
+// Read in contents of marvel.txt. Sort 'em. Unique 'em. Write 'em to Avenger.txt. One more way to do this:
+sort < marvel.txt | uniq > Avenger.txt
